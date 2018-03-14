@@ -12,8 +12,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-        <img src="">
-         <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Sedona">
+        <img src="img/LOGO.png" width="67" height="56" alt="Логотип Sedona">
         </a>
 
             <ul class="site-navigation">
@@ -40,22 +39,25 @@
                 <h3>Настоящий городок</h3>
                 <span>— №1 —</span>
                 <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
-                <img src="img/Layer%2010.jpg" width="800" height="256" alt="Седона">
+                <img src="img/town.jpg" width="800" height="256" alt="Седона">
             </div>
         </section>
 
         <section class="advantages">
-            <h2 class="visually-hidden">Советы</h2>
+            <h2 class="visually-hidden">Список преимуществ Седоны</h2>
             <ul class="advantages-list">
                 <li class=advantages-item>
+                    <span class="house"></span>
                     <h4>Жилье</h4>
                     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class=advantages-item>
+                    <span class="food"></span>
                     <h4>Еда</h4>
                     <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
                 </li>
                 <li class=advantages-item>
+                    <span class="souvenirs"></span>
                     <h4>Сувениры</h4>
                     <p>Не только китайского, но и местного производства!</p>
                 </li>
@@ -64,7 +66,7 @@
 
         <section class="reasons">
             <div class="reasons-item1">
-                <img src="img/Layer%205.jpg" width="800" height="256" alt="Седона">
+                <img src="img/bridge.jpg" width="800" height="256" alt="Седона">
                 <h3>Там есть Мост Дьявола</h3>
                 <span>— №2 — </span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -92,9 +94,37 @@
 
         <section class="form">
             <h2>Заинтересовались?</h2>
-            <p>Укажите предпологаемы даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p>Укажите предпологаемы даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p><img src="img/map.jpg" width="1200" height="593" alt="Адрес"></p>
+        </section>
+
+
+        <section class="search">
             <button type="submit" class="search-button button">Поиск гостиницы в Седоне</button>
-            <form class="search" method="get" action="https://echo.htmlacademy.ru">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <p class="search-item">
+                    <label for="search-checkindate">Дата заезда</label>
+                    <input id="search-checkindate" type="text" name="date" value="" placeholder="24 апреля 2017">
+                    <span class="calendar"></span>
+                </p>
+                <p class="search-item">
+                    <label for="search-checkoutdate">Дата выезда</label>
+                    <input id="search-checkoutdate" type="text" name="date" value="" placeholder="4 июля 2017">
+                    <span class="calendar"></span>
+                </p>
+                <p class="search-adult">
+                    <label for="search-adult">Взрослые</label>
+                    <button class="-" type="button"><img src="img/minus.jpg"></button>
+                    <input id="search-adult" type="text" name="name" value="" placeholder="2">
+                    <button class="+" type="button"><img src="img/plus.jpg"></button>
+                </p>
+                <p class="search-child">
+                    <label for="search-child">Дети</label>
+                    <button class="-" type="button"><img src="img/minus.jpg"></button>
+                    <input id="search-child" type="text" name="name" value="" placeholder="0">
+                    <button class="+" type="button"><img src="img/plus.jpg"></button>
+                </p>
+                <button class="button" type="submit">Найти</button>
             </form>
         </section>
     </main>
@@ -102,11 +132,12 @@
     <footer class="main-footer">
         <!-- display: flex-->
         <div class="footer-social">
+            <h2 class="visually-hidden">Ссылки на соцсети</h2>
             <a class="sedona-visit" href="#">#visitsedona</a>
             <ul class="social-link">
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="#" aria-label="Твиттер"></a></li>
+                <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+                <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
             </ul>
 
             <p class="footer-copyright">
