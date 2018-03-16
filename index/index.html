@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
- 
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>sedona</title>
-
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -12,7 +13,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-        <img src="img/LOGO.png" width="67" height="56" alt="Логотип Sedona">
+        <img src="img/logo.png" width="67" height="56" alt="Логотип Sedona">
         </a>
 
             <ul class="site-navigation">
@@ -47,17 +48,14 @@
             <h2 class="visually-hidden">Список преимуществ Седоны</h2>
             <ul class="advantages-list">
                 <li class=advantages-item>
-                    <span class="house"></span>
                     <h4>Жилье</h4>
                     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class=advantages-item>
-                    <span class="food"></span>
                     <h4>Еда</h4>
                     <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
                 </li>
                 <li class=advantages-item>
-                    <span class="souvenirs"></span>
                     <h4>Сувениры</h4>
                     <p>Не только китайского, но и местного производства!</p>
                 </li>
@@ -105,24 +103,28 @@
                 <p class="search-item">
                     <label for="search-checkindate">Дата заезда</label>
                     <input id="search-checkindate" type="text" name="date" value="" placeholder="24 апреля 2017">
+                    <span class="visually-hidden">Открыть календарь</span>
                     <span class="calendar"></span>
                 </p>
                 <p class="search-item">
                     <label for="search-checkoutdate">Дата выезда</label>
                     <input id="search-checkoutdate" type="text" name="date" value="" placeholder="4 июля 2017">
+                    <span class="visually-hidden">Открыть календарь</span>
                     <span class="calendar"></span>
                 </p>
                 <p class="search-adult">
                     <label for="search-adult">Взрослые</label>
-                    <button class="-" type="button"><img src="img/minus.jpg"></button>
+                    <span class="visually-hidden">Увеличить количество взрослых/уменьшить</span>
+                    <button class="minus" type="button">-</button>
                     <input id="search-adult" type="text" name="name" value="" placeholder="2">
-                    <button class="+" type="button"><img src="img/plus.jpg"></button>
+                    <button class="plus" type="button">+</button>
                 </p>
                 <p class="search-child">
                     <label for="search-child">Дети</label>
-                    <button class="-" type="button"><img src="img/minus.jpg"></button>
+                    <span class="visually-hidden">Увеличить количество детей/уменьшить</span>
+                    <button class="minus" type="button">-</button>
                     <input id="search-child" type="text" name="name" value="" placeholder="0">
-                    <button class="+" type="button"><img src="img/plus.jpg"></button>
+                    <button class="plus" type="button">+</button>
                 </p>
                 <button class="button" type="submit">Найти</button>
             </form>
@@ -141,10 +143,12 @@
             </ul>
 
             <p class="footer-copyright">
+                <span class="visually-hidden">Сайт html-academy</span>
                 <b>Website by:</b>
-                <a class="footer-logo" href="<!-- ссылка на сайт академии-->"></a>
+                <a class="footer-logo" href="https://htmlacademy.ru">HTML Academy</a>
             </p>
         </div>
     </footer>
 </body>
+
 </html>
