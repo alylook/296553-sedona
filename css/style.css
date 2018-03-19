@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    background-color: #f2f2f2;
+    letter-spacing: normal;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #ffffff;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #000000;
+    font-weight: bold;
+}
+
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #ffffff;
+}
+
+.main-footer {
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+.footer-social {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.social-link {
+    list-style: none;
+}
+
+.footer-copyright b {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* index */
+
+.top-banner {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
+
+.city-info {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.reasons-item1 {
+    color: #ffffff;
+    text-align: right;
+    background-color: #81b3d2;
+}
+
+.advantages-list {
+    list-style: none;
+}
+
+.advantages-item {
+    text-align: center;
+    list-style: none;
+}
+
+.advantages-item h4 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+
+
+.features {
+    list-style: none;
+    background-color: #eeeeee;
+}
+
+.features h3 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.form h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.form p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+.search-button {
+    text-align: center;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+
+
+    background-color: #766357;
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #604e43;
+}
+
+
+.form-button {
+    font-size: 21px;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+
+    background-color: #81b3d2;
+    border: none;
+}
+
+.form-button:hover,
+.form-button:focus,
+.form-button:active {
+    background-color: #669ec0;
+}
+
+
+
+
+
+
+
+/* catalog */
+
+.filter {
+    color: #ffffff;
+
+    background-color: img;
+    opacity: 0.9;
+}
+
+.filters-legend {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.show {
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+
+    background-color: img;
+    opacity: 0.9;
+    border: border: 2px solid #ffffff;
+}
+
+.show:hover {
+    color: #000000;
+
+    background-color: #ffffff;
+
+    cursor: pointer;
+}
+
+.search-result {
+    background-color: #ffffff;
+
+}
+
+.search-result p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.btn-sorting {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+
+.button.button-info {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+
+    background-color: #81b3d2;
+    border: none;
+}
+
+.button.button-info:hover,
+.button.button-info:focus,
+.button.button-info:active {
+    background-color: #669ec0;
+}
+
+.button.button-buy {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+
+    background-color: #766357;
+    border: none;
+}
+
+.button.button-buy:hover,
+.button.button-buy:focus,
+.button.button-buy:active {
+    background-color: #604e43;
+}
