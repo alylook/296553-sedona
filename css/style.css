@@ -18,6 +18,15 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
 .main-header {
     background-color: #ffffff;
 }
@@ -28,13 +37,56 @@ a {
     color: #000000;
 }
 
+.main-header-logo {
+    position: absolute;
+}
+
 .site-navigation {
     list-style: none;
+}
+
+ul.site-navigation {
+    margin: 0;
+    padding: 0;
+    min-height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navigation li {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li:first-child {
+    text-align: left;
+    margin-left: 6%;
+}
+
+.site-navigation li:last-child {
+    text-align: right;
+    margin-right: 6%;
+}
+
+.site-navigation li:nth-child(2) {
+    text-align: left;
+    margin-right: auto;
+
+}
+
+.site-navigation li:nth-child(3) {
+    text-align: right;
+    margin-left: auto;
+
 }
 
 .site-navigation a {
     color: #000000;
     font-weight: bold;
+
 }
 
 
@@ -43,27 +95,63 @@ a {
     background-color: #ffffff;
 }
 
+
+
 .main-footer {
     background-color: #ffffff;
     opacity: 0.9;
 }
 
+
 .footer-social {
+    margin: 0;
+    padding: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
     color: #000000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sedona-visit {
+    text-align: center;
 }
 
 .social-link {
+    margin: 0;
+    padding: 0;
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    min-height: 120px;
 }
 
-.footer-copyright b {
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
+.footer-copyright {
+    width: 115px;
+    height: 41px;
+
     font-size: 14px;
     line-height: 26px;
-    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
 
 /* index */
 
@@ -78,14 +166,52 @@ a {
     color: #000000;
 }
 
+.reasons1,
+.reasons2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reasons1::after {
+    width: 800px;
+    height: 256px;
+    content: url(../img/town.jpg)
+}
+
 .reasons-item1 {
     color: #ffffff;
-    text-align: right;
+    text-align: center;
+    background-color: #81b3d2;
+
+    width: 300px;
+    min-height: 256px;
+    padding: 0 50px;
+}
+
+.reasons-item2 {
+    color: #ffffff;
+    text-align: center;
+    min-height: 256px;
     background-color: #81b3d2;
 }
 
 .advantages-list {
+    margin: 0;
+    padding: 0;
+
+    min-height: 330px;
+
     list-style: none;
+}
+
+.advantages-list,
+.features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .advantages-item {
@@ -99,11 +225,27 @@ a {
 }
 
 
+.reasons2::before {
+    width: 800px;
+    height: 256px;
+    content: url(../img/bridge.jpg)
+}
 
 .features {
-    list-style: none;
     background-color: #eeeeee;
 }
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-height: 256px;
+}
+
+.feauters-item {
+    width: 280px;
+}
+
 
 .features h3 {
     font-size: 21px;
@@ -111,17 +253,38 @@ a {
     color: #000000;
 }
 
+.form {
+    color: #000000;
+    background: #ffffff;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    min-height: 883px;
+}
+
 .form h2 {
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
+    margin: 58px 0 0 0;
 }
 
 .form p {
-    font-size: 14px;
-    line-height: 24px;
+    margin: 0px;
+    padding: 35px 0 140px;
 }
 
+.form::after {
+    height: 593px;
+    content: url(../img/map.jpg)
+}
 
 .search-button {
     text-align: center;
@@ -166,7 +329,7 @@ a {
 
 /* catalog */
 
-.filter {
+.filters {
     color: #ffffff;
 
     background-color: img;
@@ -214,7 +377,7 @@ a {
     color: #000000;
 }
 
-.button.button-info {
+.button-info {
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -223,13 +386,13 @@ a {
     border: none;
 }
 
-.button.button-info:hover,
-.button.button-info:focus,
-.button.button-info:active {
+.button-info:hover,
+.button-info:focus,
+.button-info:active {
     background-color: #669ec0;
 }
 
-.button.button-buy {
+.button-buy {
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
@@ -238,8 +401,8 @@ a {
     border: none;
 }
 
-.button.button-buy:hover,
-.button.button-buy:focus,
-.button.button-buy:active {
+.button-buy:hover,
+.button-buy:focus,
+.button-buy:active {
     background-color: #604e43;
 }
