@@ -10,7 +10,7 @@
     <link href="css/outline.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="container">
 
     <header class="main-header">
         <nav class="main-navigation">
@@ -29,21 +29,22 @@
 
     <main>
         <section class="filters">
-            <form class="filters" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                
+                   <fieldset class="filter-form">
                     <legend class="filters-legend">Инфраструктура:</legend>
                     <ul>
-                        <li>
+                        <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
                             <label for="pool">Бассейн</label>
                         </li>
-                        <li>
+                        <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="parking">
                             <label for="parking">
               Парковка
             </label>
                         </li>
-                        <li>
+                        <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="wi-fi">
                             <label for="wi-fi">
               Wi-fi
@@ -52,22 +53,22 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="filter-form">
                     <legend class="filters-legend">Тип жилья:</legend>
                     <ul>
-                        <li>
+                        <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="hotel" checked>
                             <label for="hotel">
               Гостиница
             </label>
                         </li>
-                        <li>
+                        <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="motel" checked>
                             <label for="motel">
               Мотель
             </label>
                         </li>
-                        <li>
+                        <li class="filter-option">
                             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="apartments" checked>
                             <label for="apartments">
               Апартаменты
@@ -77,11 +78,12 @@
                 </fieldset>
 
                 <fieldset>
+                <div class='filter-range'>
                     <legend class="filters-legend">Стоимость в сутки (Р):</legend>
                     <div class="price">
-                        <label for="min-price"> <input type="text" name="min-price" id="min-price" value="0"> 
+                        <label for="min-price"> от <input type="text" name="min-price" id="min-price" value="0"> 
 </label>
-                        <label for="max-price">
+                        <label for="max-price">до
                   <input type="text" name="max-price" id="max-price" value="3000">
               </label>
                     </div>
@@ -95,8 +97,8 @@
                     </div>
 
                     <button class="show" type="submit">Показать</button>
-                </fieldset>
-
+                </div>
+ </fieldset>
             </form>
         </section>
 

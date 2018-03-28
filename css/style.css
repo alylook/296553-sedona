@@ -18,6 +18,24 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -58,6 +76,7 @@ ul.site-navigation {
     min-height: 56px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -259,34 +278,21 @@ ul.site-navigation {
     color: #000000;
 }
 
-.search-form {
-
-    position: absolute;
-    z-index: 10;
-    top: 125px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 568px;
-
-    background: #ffffff;
-    height: 480px;
-}
 
 .form {
-
+    margin: 0;
+    padding: 0;
     position: relative;
     color: #000000;
     background: #ffffff;
-
-    position: relative;
     font-size: 14px;
     line-height: 24px;
 
     margin-bottom: 40px;
 
 
+    background: rgba(255, 45, 82, 0.2);
+    box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .form h2 {
@@ -305,6 +311,46 @@ ul.site-navigation {
     content: url(../img/map.jpg)
 }
 
+.search-form {
+
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+    top: 205px;
+    left: 50%;
+    bottom: 78px;
+    right: 50%;
+    width: 568px;
+    min-height: 480px;
+
+    background: #ffffff;
+
+}
+
+.search-item {
+    background: rgba(234, 255, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+    width: 458px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.search-item label {
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
+}
+
+.button {
+    padding: 3px 10px;
+    font: inherit;
+    font-weight: 600;
+}
+
 .search-button {
     text-align: center;
     font-size: 21px;
@@ -312,6 +358,7 @@ ul.site-navigation {
     color: #ffffff;
     text-transform: uppercase;
 
+    width: 100%;
 
     background-color: #766357;
     border: none;
@@ -349,83 +396,230 @@ ul.site-navigation {
 /* catalog */
 
 .filters {
-    display: flex;
-    justify-content: space-between;
-
-    padding: 30px;
-    list-style: none;
-
-    min-height: 216px;
+    padding: 28px 72px;
     background-image: url("../img/filter background.jpg");
     background-repeat: no-repeat;
-    background-position: 0 -50px;
+    background-position: 0 -55px;
     color: #ffffff;
 }
 
-.filters fieldset {
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-form:first-child {
+    width: 255px;
+}
+
+.filter-form:nth-child(2) {
+    width: 280px;
+    margin-right: 200px;
+}
+
+.filter fieldset {
     margin: 0;
     padding: 0;
     border: none;
-}
-
-.filters-legend {
-    width: 253px;
-    padding: 0;
-    margin: 0;
-
     text-align: left;
 }
 
+.filters-legend {
 
-
-legend {
+    font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    font-weight: bold;
+}
+
+.filter ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.filter-option {
+    margin-top: 25px;
+    padding-left: 40px;
+}
+
+.filter-option label {
+    position: relative;
+
+    display: block;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+
+.filter-option label::before {
+    content: "";
+
+    position: absolute;
+    left: -40px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input:checked + label::before {
+    width: 27px;
+
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-input:disabled + label::before {
+    opacity: 0.3;
+}
+
+.filter input {
+    margin: 0;
+    padding: 0;
+
+    font: inherit;
+    color: inherit;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+
+.filter-range {
+    margin-left: auto;
+    width: 318px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 .price {
-    display: flex;
-    flex-direction: column;
-    margin-left: 600px;
+    position: relative;
+    height: 36px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    font-size: 0;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
 }
 
-.price p {
+.price::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 2px;
+    height: 22px;
+
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.price label {
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+
+    cursor: pointer;
+}
+
+.price .min-price,
+.price .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price input {
+    width: 50px;
     margin: 0;
-    font-weight: bold;
-}
 
-.price .button {
+    color: inherit;
     font: inherit;
-    line-height: 21px;
-    border: 1px solid #ffffff;
-    background-color: transparent;
+
+    background: none;
+    border: none;
 }
 
-.price .button:hover,
-.price .button:focus {
-    background-color: #ffffff;
-    color: #000000;
+.range-controls {
+    position: relative;
+
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .color-scale {
+    width: 80%;
+    height: 2px;
+
+    background: #ffffff;
+}
+
+.btn-toggle {
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.btn-toggle-min {
+    left: 0;
+}
+
+.btn-toggle-max {
+    left: 80%;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
 }
 
 .show {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+
     font-size: 14px;
-    line-height: 21px;
-    color: #fff;
+    line-height: 20px;
+    color: #ffffff;
     text-transform: uppercase;
 
-    background-color: img;
-    opacity: 0.9;
-    border: border: 2px solid #ffffff;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .show:hover {
     color: #000000;
-
     background-color: #ffffff;
-
     cursor: pointer;
 }
+
 
 .search-result {
     background-color: #ffffff;
@@ -436,10 +630,10 @@ legend {
     align-items: baseline;
     justify-content: space-between;
     width: 518px;
-    margin-left: 30px;
-    margin-right: 72px;
-    padding: 30px;
-    list-style: none;
+    margin: 0;
+    padding: 30px 72px;
+
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .found {
@@ -448,12 +642,8 @@ legend {
     font-weight: bold;
     padding-right: 45px;
 
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    border-bottom: 1px solid #f2f2f2;
+    list-style: none;
 }
-
 
 .sort-by,
 .by-price,
@@ -489,35 +679,53 @@ legend {
     list-style: none;
 }
 
-
 .hotels-item {
-    margin: 0;
-    padding: 0;
     display: flex;
-    align-items: flex-start;
-    list-style: none;
-}
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid grey;
 
-.hotel-image {
-    padding: 30px;
 }
 
 .hotel-description {
-    width: 260px;
-    height: 90px;
-    margin: 15px;
-    padding: align-items: flex-start;
+    padding: 0 0 0 30px;
+    text-align: left;
+}
+
+.hotel-description h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 21px line-height: 26px;
+}
+
+.info-wrapper {
+    padding-bottom: 20px;
+}
+
+.info-wrapper b {
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 300;
 }
 
 .hotel-rating {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 72px;
 }
 
 .btn-sorting {
     font-size: 12px;
     line-height: 18px;
     color: #000000;
+}
+
+.button-wrapper {
+    display: flex;
+}
+
+.button-wrapper a {
+    margin-right: 7px;
 }
 
 .button-info {
