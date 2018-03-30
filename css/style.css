@@ -118,9 +118,7 @@ ul.site-navigation {
 }
 
 
-
 .main-footer {
-
     background-color: #ffffff;
     opacity: 0.9;
 }
@@ -142,7 +140,6 @@ ul.site-navigation {
     line-height: 26px;
     font-weight: 700;
     color: #000;
-
     width: 400px;
 }
 
@@ -191,7 +188,6 @@ ul.site-navigation {
 .footer-logo:hover path,
 .footer-logo:focus path {
     fill: #81b3d2;
-    98c1da
 }
 
 .footer-logo:active path {
@@ -202,8 +198,25 @@ ul.site-navigation {
 /* index */
 
 .top-banner {
+    background-image: url(..img/background photo.jpg)
+}
+
+.top-banner h1 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
     background-color: #ffffff;
-    background-repeat: no-repeat;
+}
+
+.top-banner p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    background-color: #ffffff;
 }
 
 .city-info {
@@ -214,10 +227,11 @@ ul.site-navigation {
 
 .reasons1,
 .reasons2 {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     display: flex;
 
+    list-style: none;
     background-color: #81b3d2;
 }
 
@@ -227,19 +241,11 @@ ul.site-navigation {
     content: url(../img/town.jpg)
 }
 
-.reasons-item1 {
+.reasons-item {
     color: #ffffff;
     text-align: center;
-
-    width: 300px;
-    min-height: 256px;
-    padding: 0 50px;
-}
-
-.reasons-item2 {
-    color: #ffffff;
-    text-align: center;
-    min-height: 256px;
+    width: 400px;
+    padding: 45px 58px;
 }
 
 .advantages-list {
@@ -298,73 +304,6 @@ ul.site-navigation {
     color: #000000;
 }
 
-
-.form {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    color: #000000;
-    background: #ffffff;
-    font-size: 14px;
-    line-height: 24px;
-
-    margin-bottom: 40px;
-
-
-    background: rgba(255, 45, 82, 0.2);
-    box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-
-.form h2 {
-    font-size: 30px;
-    line-height: 36px;
-    margin: 58px 0 0 0;
-}
-
-.form p {
-    margin: 0px;
-    padding: 35px 0 140px;
-}
-
-.form::after {
-    height: 593px;
-    content: url(../img/map.jpg)
-}
-
-.search-form {
-
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 10;
-    top: 205px;
-    left: 50%;
-    bottom: 78px;
-    right: 50%;
-    width: 568px;
-    min-height: 480px;
-
-    background: #ffffff;
-
-}
-
-.search-item {
-    background: rgba(234, 255, 45, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-    width: 458px;
-    margin: 0;
-    padding: 0;
-
-}
-
-.search-item label {
-    display: block;
-    margin-bottom: 9px;
-    margin-left: 15px;
-}
-
 .button {
     padding: 3px 10px;
     font: inherit;
@@ -372,6 +311,13 @@ ul.site-navigation {
 }
 
 .search-button {
+
+    width: 568px;
+    height: 58px;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+
     text-align: center;
     font-size: 21px;
     line-height: 26px;
@@ -407,6 +353,79 @@ ul.site-navigation {
     background-color: #669ec0;
 }
 
+.interested {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.interested h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.interested p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    padding-top: 25px;
+    margin: 0;
+}
+
+.interested p:nth-of-type(2) {
+    padding: 0;
+}
+
+.form {
+    position: relative;
+    color: #000000;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.form h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 58px 0 0 0;
+}
+
+.form p {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    margin: 0;
+
+}
+
+.form::after {
+    height: 593px;
+    content: url(../img/map.jpg)
+}
+
+.search-form {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    width: 568px;
+    height: 395px;
+
+    background: #ffffff;
+
+    padding-top: 45px;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
 
 
 

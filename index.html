@@ -28,15 +28,14 @@
 
     <main>
         <div class="top-banner">
-            <img src="img/intro.jpg" width="1200" height="780" alt="Седона">
+            <img class="main-img" src="img/intro.jpg" width="1200" height="773" alt="Welcome to Sedona">
+            <h1>Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
         </div>
 
-        <section>
-            <h1 class="city-info">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон</p>
-        </section>
         <section class="reasons1">
-            <div class="reasons-item1">
+            <h2 class="visually-hidden">Список преимуществ Седоны</h2>
+            <div class="reasons-item">
                 <h3>Настоящий городок</h3>
                 <span>— №1 —</span>
                 <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
@@ -65,7 +64,7 @@
         </section>
 
         <section class="reasons2">
-            <div class="reasons-item2">
+            <div class="reasons-item">
                 <h3>Там есть Мост Дьявола</h3>
                 <span>— №2 — </span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -92,37 +91,41 @@
             </ul>
         </section>
 
-        <section class="form">
+        <section class="interested">
             <h2>Заинтересовались?</h2>
-            <p>Укажите предпологаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p>Укажите предполагаемые даты поездки,</p>
+            <p>и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button type="submit" class="search-button button">Поиск гостиницы в Седоне</button>
+        </section>
+
+        <section class="form">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <p class="search-item">
+                <div class="search-item">
                     <label for="search-checkindate">Дата заезда</label>
                     <input id="search-checkindate" type="text" name="date" value="" placeholder="24 апреля 2017">
                     <span class="visually-hidden">Открыть календарь</span>
                     <span class="calendar"></span>
-                </p>
-                <p class="search-item">
+                </div>
+                <div class="search-item">
                     <label for="search-checkoutdate">Дата выезда</label>
                     <input id="search-checkoutdate" type="text" name="date" value="" placeholder="4 июля 2017">
                     <span class="visually-hidden">Открыть календарь</span>
                     <span class="calendar"></span>
-                </p>
-                <p class="search-adult">
+                </div>
+                <div class="search-adult">
                     <label for="search-adult">Взрослые</label>
                     <span class="visually-hidden">Увеличить количество взрослых/уменьшить</span>
                     <button class="minus" type="button">-</button>
                     <input id="search-adult" type="text" name="name" value="" placeholder="2">
                     <button class="plus" type="button">+</button>
-                </p>
-                <p class="search-child">
+                </div>
+                <div class="search-child">
                     <label for="search-child">Дети</label>
                     <span class="visually-hidden">Увеличить количество детей/уменьшить</span>
                     <button class="minus" type="button">-</button>
                     <input id="search-child" type="text" name="name" value="" placeholder="0">
                     <button class="plus" type="button">+</button>
-                </p>
+                </div>
                 <button class="form-button" type="submit">Найти</button>
             </form>
         </section>
