@@ -197,26 +197,62 @@ ul.site-navigation {
 
 /* index */
 
-.top-banner {
-    background-image: url(..img/background photo.jpg)
+.welcome-image {
+    width: 1200px;
+    height: 508px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7dacce;
+    background-image: url("../img/background-photo.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 50% 21%;
+    text-align: center;
 }
 
-.top-banner h1 {
+.welcome-image img {
+    margin-top: 75px;
+    margin-bottom: 23px;
+}
+
+.welcome-image::after {
+    content: url("../img/shape-1.png");
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+
+.annotation {
+    background-color: #ffffff;
+
+    padding-top: 58px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.annotation h2 {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
-    color: #000000;
     text-align: center;
-    background-color: #ffffff;
+    letter-spacing: 0.04px;
+
+    margin-top: 0;
+    padding-bottom: 10px;
+    width: 480px;
+    padding-left: 360px;
 }
 
-.top-banner p {
-    font-size: 14px;
+.annotation p {
     line-height: 26px;
-    font-weight: 400;
-    color: #333333;
+    letter-spacing: 0.06px;
     text-align: center;
-    background-color: #ffffff;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0;
 }
 
 .city-info {
@@ -803,6 +839,24 @@ ul.site-navigation {
 
 }
 
+.stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.stars span {
+    display: block;
+    width: 18px;
+    min-height: 18px;
+    margin: 0 0 0 6px;
+    padding-bottom: 45px;
+    background-image: url("../img/star.svg");
+    background-repeat: no-repeat;
+}
+
 .rating {
     width: 110px;
     margin-bottom: 5px;
@@ -811,13 +865,6 @@ ul.site-navigation {
     text-align: center;
 
     background-color: #f2f2f2;
-}
-
-.stars {
-    display: flex;
-    padding-left: 5px;
-    padding-bottom: 25px;
-    justify-content: flex-end;
 }
 
 
