@@ -37,7 +37,7 @@ input[type="radio"].visually-hidden {
     margin-right: auto;
     box-sizing: border-box;
     padding: 0;
-    box-shadow: 0 0 15px 5px rgba (0, 1, 1, .2)
+    box-shadow: 0 0 15px 5px rgba (0, 1, 1, 0.2)
 }
 
 .main-header {
@@ -80,7 +80,7 @@ ul.site-navigation {
 .site-navigation li {
     width: 20%;
     margin: 0;
-    padding: 0;
+    padding: 15px 0;
 }
 
 .site-navigation li:first-child {
@@ -603,7 +603,7 @@ ul.site-navigation {
     line-height: 26px;
     letter-spacing: 0.041px;
     padding-right: 18px;
-    width: 113px;
+    width: 114px;
 }
 
 
