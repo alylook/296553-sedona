@@ -7,7 +7,6 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
-    text-align: center;
     margin: 0;
     background-color: #f2f2f2;
     letter-spacing: normal;
@@ -136,7 +135,7 @@ ul.site-navigation {
 .main-footer-index {
     opacity: 0.9;
     margin: 0;
-    margin-top: -120px;
+    margin-top: -130px;
     position: relative;
     z-index: 1;
 }
@@ -250,7 +249,7 @@ ul.site-navigation {
 .annotation {
     background-color: #ffffff;
 
-    padding-top: 58px;
+    padding-top: 60px;
     padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -274,10 +273,7 @@ ul.site-navigation {
     letter-spacing: 0.06px;
     text-align: center;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-top: 0;
+    margin: 0;
 }
 
 .city-info {
@@ -306,7 +302,28 @@ ul.site-navigation {
     color: #ffffff;
     text-align: center;
     width: 400px;
-    padding: 45px 58px;
+    padding: 48px;
+}
+
+.reasons-item span {
+    display: block;
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.reasons-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #fff;
+    margin: 0 auto;
+    width: 155px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.reasons-item p {
+    margin: 0;
+    width: 304px;
 }
 
 .advantages-list {
@@ -322,8 +339,8 @@ ul.site-navigation {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 65px;
+    margin-bottom: 80px;
+    margin-top: 58px;
 }
 
 .advantages-item {
@@ -335,8 +352,13 @@ ul.site-navigation {
 .advantages-item h4 {
     font-size: 21px;
     line-height: 21px;
+    margin-bottom: 25px;
+    margin-top: 23px;
 }
 
+.advantages-item p {
+    margin: 0;
+}
 
 .reasons2::before {
     width: 800px;
@@ -355,17 +377,31 @@ ul.site-navigation {
     min-height: 256px;
 }
 
-.feauters-item {
+.feature-item {
     width: 280px;
+    height: 150px;
 }
 
-
-.features h3 {
+.feature-item h3 {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
     margin: 0 auto;
     width: 135px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.feature-item span {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.feature-item p {
+    width: 266px;
+    text-align: center;
+    margin: 0;
 }
 
 .button {
@@ -375,9 +411,10 @@ ul.site-navigation {
 }
 
 .form {
-    text-align: center;
-    vertical-align: middle;
-
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
@@ -386,6 +423,7 @@ ul.site-navigation {
 }
 
 .form h2 {
+    text-align: center;
     margin: 0;
     font-size: 30px;
     font-weight: 700;
@@ -397,6 +435,7 @@ ul.site-navigation {
 }
 
 .form p {
+    margin: 0;
     line-height: 24px;
     text-align: center;
     margin: 0 auto;
@@ -404,6 +443,7 @@ ul.site-navigation {
 }
 
 .search-button {
+    align-self: center;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
@@ -412,7 +452,8 @@ ul.site-navigation {
 
     background-color: #766357;
 
-    min-width: 560px;
+    width: 570px;
+    height: px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -536,8 +577,7 @@ ul.site-navigation {
     padding: 0px;
     width: 38px;
     height: 38px;
-    padding-bottom: 3px;
-    padding-left: 3px;
+
 }
 
 .plus {
@@ -558,16 +598,17 @@ ul.site-navigation {
 }
 
 .search-item label {
+    display: block;
     font-weight: 700;
     line-height: 26px;
     letter-spacing: 0.041px;
-    padding-right: 10px;
-    min-width: 100px;
-    margin-top: 10px;
+    padding-right: 18px;
+    width: 113px;
 }
 
-.search-children {
-    padding-left: 10px;
+
+.search-item-children label {
+    width: 50px;
 }
 
 .submit-button {
@@ -600,6 +641,18 @@ ul.site-navigation {
     flex-shrink: 0;
 }
 
+.search-item-adults {
+    width: 230px;
+}
+
+.search-item-adults label {
+    width: 96px;
+}
+
+.search-item-children {
+    width: 180px;
+}
+
 .wrap-column-index {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -610,9 +663,6 @@ ul.site-navigation {
     padding-bottom: 22px;
 }
 
-.wrap-column-index label {
-    width: 93px;
-}
 
 .search-item .child {
     padding-right: 0px;
@@ -620,6 +670,7 @@ ul.site-navigation {
     display: block;
     width: 64px;
 }
+
 
 .form-button {
     width: 458px;
@@ -999,14 +1050,15 @@ ul.site-navigation {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 30px 72px;
+    width: 1200px;
+    padding: 28px 0;
     border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-image {
     width: 135px;
     height: 90px;
+    padding-left: 72px;
 }
 
 .info-wrapper {
@@ -1014,17 +1066,18 @@ ul.site-navigation {
 }
 
 .hotel-description {
-
     padding: 0 0 0 30px;
     text-align: left;
+
 }
 
 .hotel-description h3 {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
     font-size: 21px;
     line-height: 26px;
     color: #000;
+    letter-spacing: inherit;
 }
 
 .hotel-description h3:hover {
