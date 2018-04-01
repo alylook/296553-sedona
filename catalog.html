@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>sedona</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="container">
@@ -31,7 +31,7 @@
     <main>
         <section class="filters">
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-
+                <h1 class="visually-hidden">Каталог подбора гостиниц</h1>
                 <fieldset class="filter-form">
                     <legend class="filters-legend">Инфраструктура:</legend>
                     <ul>
@@ -79,8 +79,8 @@
                 </fieldset>
 
                 <fieldset>
+                    <legend class="filters-legend">Стоимость в сутки (Р):</legend>
                     <div class='filter-range'>
-                        <legend class="filters-legend">Стоимость в сутки (Р):</legend>
                         <div class="price">
                             <label class="min-price" for="min-price"> от <input type="text" name="min-price" id="min-price" value="0"> 
 </label>
@@ -104,6 +104,7 @@
         </section>
 
         <section class="search-result">
+            <h2 class="visually-hidden">Найденные варианты гостиниц</h2>
             <ul class="sort">
                 <li class="found">
                     <b>Найдено: 3</b>

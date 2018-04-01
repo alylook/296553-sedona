@@ -135,7 +135,7 @@ ul.site-navigation {
 .main-footer-index {
     opacity: 0.9;
     margin: 0;
-    margin-top: -130px;
+    margin-top: -120px;
     position: relative;
     z-index: 1;
 }
@@ -477,8 +477,8 @@ ul.site-navigation {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     top: 100%;
-    padding-top: 55px;
-    padding-left: 55px;
+    padding-top: 54px;
+    padding-left: 57px;
     padding-right: 56px;
     padding-bottom: 56px;
     -webkit-box-shadow: 0px 0px 35px 3px rgba(0, 1, 1, 0.2);
@@ -675,7 +675,7 @@ ul.site-navigation {
 .form-button {
     width: 458px;
     height: 58px;
-
+    margin-top: 30px;
 
     font-weight: bold;
     font-size: 21px;
@@ -701,6 +701,8 @@ ul.site-navigation {
 .form-button:active path {
     fill: #88b6d1;
 }
+
+
 
 /* catalog */
 
