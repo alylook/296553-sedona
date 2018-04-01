@@ -374,7 +374,9 @@ ul.site-navigation {
     list-style: none;
     padding: 0;
     margin: 0;
-    min-height: 256px;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 55px;
 }
 
 .feature-item {
@@ -600,9 +602,9 @@ ul.site-navigation {
 .search-item label {
     display: block;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 28px;
     letter-spacing: 0.041px;
-    padding-right: 18px;
+    padding-right: 20px;
     width: 118px;
 }
 
@@ -723,13 +725,15 @@ ul.site-navigation {
     flex-wrap: wrap;
 }
 
-.filter-form:first-child {
-    width: 255px;
-}
 
 .filter-form:nth-child(2) {
-    width: 280px;
-    margin-right: 200px;
+    width: 164px;
+    margin-right: 94px;
+}
+
+.filter-form:nth-child(3) {
+    width: 386px;
+    margin-right: 94px;
 }
 
 .filter fieldset {
@@ -737,13 +741,14 @@ ul.site-navigation {
     padding: 0;
     border: none;
     text-align: left;
+    width: 260px;
 }
 
 .filters-legend {
-
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+    text-align: left;
 }
 
 .filter ul {
@@ -825,8 +830,8 @@ ul.site-navigation {
 .price {
     position: relative;
     height: 36px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-bottom: 18px;
 
     font-size: 0;
     border: 2px solid #ffffff;
@@ -876,7 +881,7 @@ ul.site-navigation {
 .range-controls {
     position: relative;
 
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 .range-controls .scale {
@@ -921,7 +926,7 @@ ul.site-navigation {
 .show {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 33px;
 
     font-size: 14px;
     line-height: 20px;
@@ -939,7 +944,6 @@ ul.site-navigation {
     background-color: #ffffff;
     cursor: pointer;
 }
-
 
 .search-result {
     background-color: #ffffff;
