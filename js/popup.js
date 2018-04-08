@@ -1,4 +1,3 @@
-
   var searchbutton = document.querySelector(".search-button");
   var popup = document.querySelector(".search-form");
   var checkin = popup.querySelector("[name=search-checkindate]");
@@ -19,6 +18,8 @@
       checkin.focus();
     }
   });
+
+
   popup.addEventListener("submit", function (evt) {
     if ((!checkin.value) || (!checkout.value)) {
       evt.preventDefault();
