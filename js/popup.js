@@ -23,14 +23,14 @@
   popup.addEventListener("submit", function (evt) {
     if ((!checkin.value) || (!checkout.value)) {
       evt.preventDefault();
-      popup.classList.remove("search-form-error");
-      popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("search-form-error");
+      popup.offsetWidth = popup.offsetWidth;
     }
     else {
       localStorage.setItem("checkin", checkin.value);
     }
   });
+
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
@@ -39,4 +39,3 @@
       }
     }
   });
-
